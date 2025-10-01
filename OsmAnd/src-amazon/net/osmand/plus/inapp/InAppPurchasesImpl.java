@@ -73,7 +73,7 @@ public class InAppPurchasesImpl extends InAppPurchases {
 	}
 
 	@Override
-	public boolean isMapsSubscription(InAppPurchase p) {
+	public boolean isMaps(InAppPurchase p) {
 		return p.getFeatureId() == MAPS_ID || p.getFeatureId() == FULL_VERSION_ID;
 	}
 
