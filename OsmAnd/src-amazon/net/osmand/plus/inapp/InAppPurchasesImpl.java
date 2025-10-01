@@ -63,7 +63,7 @@ public class InAppPurchasesImpl extends InAppPurchases {
 	}
 
 	@Override
-	public boolean isLiveUpdatesSubscription(InAppPurchase p) {
+	public boolean isLiveUpdates(InAppPurchase p) {
 		return p.getFeatureId() == LIVE_UPDATES_ID;
 	}
 
