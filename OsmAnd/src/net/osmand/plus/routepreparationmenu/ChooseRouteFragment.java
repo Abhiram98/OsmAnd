@@ -871,12 +871,12 @@ public class ChooseRouteFragment extends BaseFullScreenFragment implements Conte
 		return showInstance(fragmentManager, args);
 	}
 
-	public static boolean showInstance(@NonNull FragmentManager fragmentManager,
+	public static boolean showInstance(@NonNull FragmentManager manager,
 			@Nullable Bundle args) {
-		if (AndroidUtils.isFragmentCanBeAdded(fragmentManager, TAG)) {
+		if (AndroidUtils.isFragmentCanBeAdded(manager, TAG)) {
 			ChooseRouteFragment fragment = new ChooseRouteFragment();
 			fragment.setArguments(args);
-			fragmentManager.beginTransaction()
+			manager.beginTransaction()
 					.add(R.id.routeMenuContainer, fragment, TAG)
 					.commitAllowingStateLoss();
 			return true;
