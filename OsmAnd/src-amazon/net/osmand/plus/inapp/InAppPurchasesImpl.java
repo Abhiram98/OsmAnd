@@ -68,7 +68,7 @@ public class InAppPurchasesImpl extends InAppPurchases {
 	}
 
 	@Override
-	public boolean isOsmAndProSubscription(InAppPurchase p) {
+	public boolean isOsmAndPro(InAppPurchase p) {
 		return p.getFeatureId() == OSMAND_PRO_ID;
 	}
 
