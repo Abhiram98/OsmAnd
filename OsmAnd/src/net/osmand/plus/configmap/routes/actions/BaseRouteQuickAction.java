@@ -48,7 +48,7 @@ public abstract class BaseRouteQuickAction extends QuickAction {
 	}
 
 	@Override
-	public void execute(@NonNull MapActivity mapActivity, @Nullable KeyEvent event) {
+	public void execute(@NonNull MapActivity mapActivity, @Nullable KeyEvent params) {
 		String attrName = getAttrName();
 		OsmandApplication app = mapActivity.getMyApplication();
 		RenderingRuleProperty property = getProperty(app);
